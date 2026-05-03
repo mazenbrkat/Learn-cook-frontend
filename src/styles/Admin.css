@@ -1,0 +1,86 @@
+.admin-page {
+  min-height: 100vh;
+  padding: 80px 30px;
+  background: linear-gradient(135deg, #f6f9fc, #eef2f7);
+  box-sizing: border-box;
+  margin-top: 70px;
+}
+body {
+  overflow-x: hidden;
+}
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+.admin-page h3 {
+  font-weight: 600;
+}
+
+.btn-danger {
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #f1f3f5;
+}
+
+.table tbody tr {
+  transition: 0.2s;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fa;
+}
+.img-box {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-box {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.toast-custom {
+  bottom: 20px;
+  right: 20px;
+  background: #111;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}

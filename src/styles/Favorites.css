@@ -1,0 +1,92 @@
+.favorites-page {
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  margin-top: 70px;
+}
+.favorites-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #ff4d4d, #ff7b7b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.favorites-header p {
+  color: #888;
+  font-size: 15px;
+}
+.fav-item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.fav-item:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+.remove-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #ff4d4d;
+  color: white;
+  transform: scale(1.2) rotate(10deg);
+}
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+.empty-state {
+  text-align: center;
+  padding: 120px 0;
+}
+
+.empty-state h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.empty-state p {
+  color: #888;
+}
+.skeleton-card {
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.skeleton-img {
+  height: 200px;
+  border-radius: 10px;
+  background: linear-gradient(90deg,#eee,#ddd,#eee);
+  background-size: 200%;
+  animation: shimmer 1.2s infinite;
+}
+.remove-btn:active {
+  transform: scale(0.9);
+}

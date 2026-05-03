@@ -1,0 +1,144 @@
+.profile-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  margin-top: 120px;
+}
+.profile-header-card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.profile-header-card:hover {
+  transform: translateY(-5px);
+}
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+}
+.edit-overlay-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  transition: 0.3s;
+}
+
+.edit-overlay-btn:hover {
+  transform: scale(1.1);
+  background: #0b5ed7;
+}
+.stat-item {
+  text-align: center;
+}
+
+.stat-item span {
+  font-size: 22px;
+  color: #0d6efd;
+}
+
+.stat-divider {
+  width: 1px;
+  background: #ddd;
+  height: 45px;
+}
+.custom-tabs {
+  max-width: 450px;
+  margin: auto;
+  background: #f1f3f6;
+}
+
+.tab-btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #f3f2f2;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #0d6efd, #4dabf7);
+  color: white;
+  box-shadow: 0 5px 15px rgba(13,110,253,0.3);
+}
+.recipe-mini-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.recipe-mini-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.image-container {
+  height: 150px;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: 0.4s;
+}
+
+.recipe-mini-card:hover img {
+  transform: scale(1.1);
+}
+.comment-card {
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.comment-card:hover {
+  transform: translateX(5px);
+}
+.rating-row {
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.rating-row:hover {
+  transform: scale(1.02);
+  background: #f8f9fa;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+}
+
+.modal-content-custom {
+  width: 400px;
+  max-width: 90%;
+  border-radius: 20px;
+  animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

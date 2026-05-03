@@ -1,0 +1,123 @@
+.details-page {
+  padding-top: 100px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  margin-top: 70px;
+}
+
+/* Card */
+.details-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Image */
+.details-page img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Stars */
+.star {
+  font-size: 28px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star.active {
+  color: gold;
+}
+
+/* Ingredients */
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredients-list li {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.ingredients-list li:hover {
+  background: #ffecec;
+  transform: translateX(-4px);
+}
+
+/* Steps */
+.steps li {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Comments */
+/* Container */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Card */
+.comment-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  background: var(--card-bg);
+  padding: 12px 15px;
+  border-radius: 12px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.comment-card img {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Body */
+.comment-body {
+  flex: 1;
+}
+
+/* Header */
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Name */
+.comment-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Time */
+.comment-time {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Text */
+.comment-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
